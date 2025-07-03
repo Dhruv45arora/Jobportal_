@@ -15,7 +15,7 @@ from pathlib import Path
 from datetime import timedelta
 from decouple import config
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
-from decouple import config
+from decouple import config#add one more comment
 
 GOOGLE_CLIENT_ID = config('GOOGLE_CLIENT_ID')
 
