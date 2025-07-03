@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Custom Resume</title>
+    <style>
+        body { font-family: Arial; padding: 20px; }
+        h1 { font-size: 28px; margin-bottom: 0; }
+        p { margin: 4px 0; }
+        img.profile { width: 150px; height: auto; border-radius: 10px; margin-top: 20px; }
+    </style>
+</head>
+<body>
+    {% if resume.photo %}
+        <img class="profile" src="{{ resume.photo.url }}" alt="Profile Photo">
+    {% endif %}
+    <h1>{{ resume.full_name }}</h1>
+    <p><strong>Email:</strong> {{ resume.email }}</p>
+    <p><strong>Phone:</strong> {{ resume.phone }}</p>
+    <p><strong>Address:</strong> {{ resume.address }}</p>
+    <p><strong>skills:</strong> {{ resume.skilss }}</p>
+</body>
+</html>
