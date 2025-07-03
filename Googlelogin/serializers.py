@@ -5,7 +5,7 @@ from .models import PostedJob,Save_post_By_user
 class CustomUserSerializer(serializers.ModelSerializer):
     password = serializers.CharField(write_only=True)
     
-    class Meta:
+    class Meta:#this is the metadata class
         model = CustomUser
         fields = ['id', 'name', 'email', 'phone', 'photo', 'workStatus', 'resume', 'password']
         read_only_fields = ['id']
